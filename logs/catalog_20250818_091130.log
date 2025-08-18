@@ -1,0 +1,2 @@
+2025-08-18 09:11:30 [INFO    ] src.utils.excel: Logger configurado. Arquivo de log: logs/catalog_20250818_091130.log
+2025-08-18 09:11:30 [ERROR   ] src.utils.excel: Erro ao carregar dados de produtos: [Errno 2] No such file or directory: 'data/produtos.xlsx'

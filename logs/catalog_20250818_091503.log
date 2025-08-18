@@ -1,0 +1,5 @@
+2025-08-18 09:15:03 [INFO    ] src.utils.excel: Logger configurado. Arquivo de log: logs/catalog_20250818_091503.log
+2025-08-18 09:15:03 [INFO    ] src.utils.excel: Planilha carregada: data/produtos.xlsx com 589 registros
+2025-08-18 09:15:03 [INFO    ] src.utils.excel: 574 produtos após remover valores nulos
+2025-08-18 09:15:04 [INFO    ] src.utils.excel: Planilha de imagens carregada: data/base_imagens.xlsx com 2722 registros
+2025-08-18 09:15:04 [INFO    ] src.utils.excel: 2425 links de imagem válidos encontrados

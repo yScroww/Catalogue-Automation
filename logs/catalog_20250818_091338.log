@@ -1,0 +1,4 @@
+2025-08-18 09:13:38 [INFO    ] src.utils.excel: Logger configurado. Arquivo de log: logs/catalog_20250818_091338.log
+2025-08-18 09:13:38 [INFO    ] src.utils.excel: Planilha carregada: data/produtos.xlsx com 589 registros
+2025-08-18 09:13:38 [INFO    ] src.utils.excel: 574 produtos após remover valores nulos
+2025-08-18 09:13:38 [ERROR   ] src.utils.excel: Erro ao carregar links de imagem: [Errno 2] No such file or directory: 'data/base_imagens.xlsx'
