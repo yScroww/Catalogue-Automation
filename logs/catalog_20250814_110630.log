@@ -1,0 +1,33 @@
+2025-08-14 11:06:30 [INFO    ] utils.excel: Logger configurado. Arquivo de log: logs/catalog_20250814_110630.log
+2025-08-14 11:06:30 [INFO    ] utils.images: Logger configurado. Arquivo de log: logs/catalog_20250814_110630.log
+2025-08-14 11:06:30 [INFO    ] catalog_builder: Logger configurado. Arquivo de log: logs/catalog_20250814_110630.log
+2025-08-14 11:06:30 [INFO    ] __main__: Logger configurado. Arquivo de log: logs/catalog_20250814_110630.log
+2025-08-14 11:06:30 [INFO    ] __main__: Iniciando geração do catálogo com layout default
+2025-08-14 11:06:30 [INFO    ] catalog_builder: Iniciando geração do catálogo...
+2025-08-14 11:06:30 [INFO    ] utils.excel: Planilha carregada: data/products.xlsx com 586 registros
+2025-08-14 11:06:30 [INFO    ] utils.excel: 574 produtos após remover valores nulos
+2025-08-14 11:06:30 [INFO    ] catalog_builder: Planilha de produtos carregada com 574 itens.
+2025-08-14 11:06:30 [ERROR   ] utils.excel: Erro ao carregar links de imagem: [Errno 2] No such file or directory: 'data/base_imagens.xlsx'
+2025-08-14 11:06:30 [ERROR   ] __main__: Erro fatal ao gerar catálogo: [Errno 2] No such file or directory: 'data/base_imagens.xlsx'
+Traceback (most recent call last):
+  File "c:\Users\gustavo\Documents\Automation project\src\main.py", line 66, in main
+    build_catalog(args, layout_config)
+  File "c:\Users\gustavo\Documents\Automation project\src\catalog_builder.py", line 136, in build_catalog
+    img_links_df = load_image_links(args.img_excel)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gustavo\Documents\Automation project\src\utils\excel.py", line 54, in load_image_links
+    df = pd.read_excel(path)
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gustavo\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\gustavo\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gustavo\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+         ^^^^^^^^^^^
+  File "C:\Users\gustavo\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'data/base_imagens.xlsx'

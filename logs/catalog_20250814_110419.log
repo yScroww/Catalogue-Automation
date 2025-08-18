@@ -1,0 +1,3 @@
+2025-08-14 11:04:19 [INFO    ] utils.excel: Logger configurado. Arquivo de log: logs/catalog_20250814_110419.log
+2025-08-14 11:04:20 [INFO    ] utils.excel: Planilha carregada: data/products.xlsx com 591 registros
+2025-08-14 11:04:20 [ERROR   ] utils.excel: Erro ao carregar dados de produtos: A planilha precisa ter colunas para SKU, Nome e Categoria

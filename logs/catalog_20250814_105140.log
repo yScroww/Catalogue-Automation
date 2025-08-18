@@ -1,0 +1,2 @@
+2025-08-14 10:51:40 [INFO    ] utils.excel: Logger configurado. Arquivo de log: logs/catalog_20250814_105140.log
+2025-08-14 10:51:41 [ERROR   ] utils.excel: Erro ao carregar dados de produtos: Excel file format cannot be determined, you must specify an engine manually.

@@ -1,0 +1,5 @@
+2025-08-14 11:58:53 [INFO    ] utils.excel: Logger configurado. Arquivo de log: logs/catalog_20250814_115853.log
+2025-08-14 11:58:54 [INFO    ] utils.excel: Planilha carregada: data/products.xlsx com 586 registros
+2025-08-14 11:58:54 [INFO    ] utils.excel: 574 produtos após remover valores nulos
+2025-08-14 11:58:55 [INFO    ] utils.excel: Planilha de imagens carregada: data/imagens/base_imagens.xlsx com 2722 registros
+2025-08-14 11:58:55 [INFO    ] utils.excel: 2425 links de imagem válidos encontrados
