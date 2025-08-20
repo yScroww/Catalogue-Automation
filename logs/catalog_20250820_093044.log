@@ -1,0 +1,32 @@
+2025-08-20 09:30:44 [INFO    ] src.utils.excel: Logger configurado. Arquivo de log: logs/catalog_20250820_093044.log
+2025-08-20 09:30:44 [INFO    ] src.utils.images: Logger configurado. Arquivo de log: logs/catalog_20250820_093044.log
+2025-08-20 09:30:44 [INFO    ] __main__: Logger configurado. Arquivo de log: logs/catalog_20250820_093044.log
+2025-08-20 09:30:44 [INFO    ] __main__: Iniciando geração do catálogo em PDF...
+2025-08-20 09:30:44 [INFO    ] src.utils.excel: Carregando planilha: data/produtos.xlsx
+2025-08-20 09:30:45 [ERROR   ] __main__: Erro fatal ao gerar catálogo: not enough values to unpack (expected 4, got 3)
+Traceback (most recent call last):
+  File "C:\Users\gustavo\Documents\Automation project\Catalogue-Automation\src\utils\excel.py", line 15, in find_columns
+    col_name = df.columns[df_cols.index(name.lower())]
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: 'imagem' is not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gustavo\Documents\Automation project\Catalogue-Automation\src\utils\excel.py", line 38, in load_product_data
+    c_sku, c_nome, c_cat, c_img = find_columns(df, ['SKU', 'Nome do Produto', 'Grupo', 'Imagem'])
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gustavo\Documents\Automation project\Catalogue-Automation\src\utils\excel.py", line 18, in find_columns
+    raise ValueError(f"A coluna obrigatória '{name}' não foi encontrada na planilha.")
+ValueError: A coluna obrigatória 'Imagem' não foi encontrada na planilha.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gustavo\Documents\Automation project\Catalogue-Automation\src\main.py", line 52, in main
+    df, c_sku, c_nome, c_cat, c_img = load_product_data(args.excel)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gustavo\Documents\Automation project\Catalogue-Automation\src\utils\excel.py", line 40, in load_product_data
+    c_sku, c_nome, c_cat, _ = find_columns(df, ['SKU', 'Nome do Produto', 'Grupo'])
+    ^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 4, got 3)

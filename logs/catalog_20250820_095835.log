@@ -1,0 +1,479 @@
+2025-08-20 09:58:35 [INFO    ] src.pdf_builder: Logger configurado. Arquivo de log: logs/catalog_20250820_095835.log
+2025-08-20 09:58:35 [INFO    ] src.utils.excel: Logger configurado. Arquivo de log: logs/catalog_20250820_095835.log
+2025-08-20 09:58:36 [INFO    ] src.utils.excel: Carregando planilha: data/produtos.xlsx
+2025-08-20 09:58:36 [INFO    ] src.utils.excel: Coluna 'Imagem' não encontrada na planilha de produtos, usando apenas a base de links de imagem.
+2025-08-20 09:58:36 [INFO    ] src.utils.excel: 575 produtos após remover valores nulos
+2025-08-20 09:58:36 [INFO    ] src.utils.excel: Carregando planilha de imagens: data/base_imagens.xlsx
+2025-08-20 09:58:37 [WARNING ] src.utils.excel: Foram encontradas e removidas 1493 SKUs duplicadas na base de imagens.
+2025-08-20 09:58:37 [INFO    ] src.utils.excel: 1229 links de imagem e fornecedor válidos encontrados
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Iniciando a criação do PDF incrementalmente em 'catalogo_gerado.pdf'...
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'ALPINO Achoc Com Leite NPro 1,3Kg' (SKU: 12157199) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MILANO Leite Em Pó Desnatado NPro 300g' (SKU: 12189531) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESCAFÉ ALEGRIA Café NPro 500g' (SKU: 12257968) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESCAFÉ Café Em Grãos NPro 1Kg' (SKU: 12338492) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESCAFÉ Cappuccino Latte 1300g' (SKU: 412884) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESCAU Com Leite NPro 1,3Kg' (SKU: 12153428) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTLÉ Dois Frades Achoc Pó NPro 1,3Kg' (SKU: 12302038) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'ACHOCOLATADO Em Pó 200g' (SKU: 12555551) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'ACHOCOLATADO Em Pó 30% Cacau 180g' (SKU: 12551154) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'ACHOCOLATADO Em Pó 350g' (SKU: 12572694) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'ACHOCOLATADO Em Pó 350g' (SKU: 12604964) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'ACHOCOLATADO Em Pó 670g' (SKU: 12385658) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'ACHOCOLATADO Em Pó 670g' (SKU: 12556035) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'ACHOCOLATADO Em Pó 730g' (SKU: 12477871) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'ACHOCOLATADO Em Pó Actgo 550g' (SKU: 12477866) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'ACHOCOLATADO Em Pó Morango 200g' (SKU: 12493320) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'ACHOCOLATADO Em Pó Morango 380g' (SKU: 12250611) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESCAU Achocolatado Po 60% Ccu 24x180g' (SKU: 12551184) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'ALPINO Gotas Chocolate 60g' (SKU: 12495822) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'BONO Bisc Rech Fininho Choc 57g' (SKU: 12439521) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'BONO Biscoito Recheado Coco 90g' (SKU: 12550128) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'BONO Recheado Doce de Leite 90g' (SKU: 12550004) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'BONO Recheado Fininho Limão 57g' (SKU: 12520002) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'BONO Recheado Limão 90g' (SKU: 12549995) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'BONO Recheado Morango 90g' (SKU: 12549982) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'BONO Wafer Chocolate 110g' (SKU: 12534263) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'BONO Wafer Limao 110g' (SKU: 12463773) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'BONO Wafer Morango 110g' (SKU: 12534547) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'CALIPSO Coberto Chocolate 130g' (SKU: 418897) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'CALIPSO Coberto Chocolate Branco 130g' (SKU: 12525704) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'CHARGE Biscoito Recheado 130g' (SKU: 12612894) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'CHARGE Cookie Gotas Choc 60g' (SKU: 12613367) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'CLASSIC Recheado Chocolate 140g' (SKU: 12182407) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'CLASSIC Wafer Chocolate 110g' (SKU: 12136358) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'COOKIES Nestlé Cobertura Chocolate 100g' (SKU: 12612400) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'COOKIES Nestlé Recheio de Avelã 100g' (SKU: 12609059) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'COOKIES Nestlé Recheio de Chocolate 100g' (SKU: 12609061) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'COOKIES Nestlé Recheio de Peanut 40x100g' (SKU: 12604954) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'COOKIES Nestlé Recheio de Serenata de amor 100g' (SKU: 12609164) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'GALAK Wafer 110g' (SKU: 12534256) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'GAROTO Caribe 60g' (SKU: 12591962) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'GAROTO ChocoCookies Rech Choc 100g' (SKU: 12592511) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'GAROTO Chocobiscuit Choc aoLei 30x78g' (SKU: 12591944) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'GAROTO Crocante 60g' (SKU: 12591961) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MOÇA Recheado 140g' (SKU: 12182409) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NAEGRESCO Recheado Chocolate 90g' (SKU: 12550648) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NEGRESCO Biscoito Recheado Peanut Butter 57g' (SKU: 12579688) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NEGRESCO Fininho Recheado 57g' (SKU: 12511795) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NEGRESCO Gotas Baunilha 60g' (SKU: 12340089) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NEGRESCO Recheado 90g' (SKU: 12549968) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NEGRESCO Recheado Limão Siciliano 90g' (SKU: 12550520) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NEGRESCO Recheado Morango 90g' (SKU: 12549969) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NEGRESCO Wafer 110g' (SKU: 12136359) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESCAU Gotas Chocolate Duo 60g' (SKU: 12479850) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESCAU Recheado 140g' (SKU: 12182408) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESCAU Wafer Chocolate 110g' (SKU: 12520001) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESFIT Banana, Aveia e Canela 160g' (SKU: 12439508) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESFIT Cacau e Avelã 60g' (SKU: 12360716) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESFIT Cacau e Cereais 160g' (SKU: 12439442) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESFIT Coco 160g' (SKU: 12439496) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESFIT Delice Cacau e Avelã 140g' (SKU: 12420220) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESFIT Delice Maçã e Canela 140g' (SKU: 12420221) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESFIT Laranja e Cenoura 160g' (SKU: 12439444) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESFIT Limão e Cereais 160g' (SKU: 12439453) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESFIT Morango e Cereais 160g' (SKU: 12439451) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTLE ChocoCookies Brownie 100g' (SKU: 12609048) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTLE Chocobiscuit Choc aoLei 30x78g' (SKU: 12591933) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTLÉ Gotas Chocolate 60g' (SKU: 12340110) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTLÉ Gotas Chocolate 60g' (SKU: 12479852) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'PASSATEMPO Bisc Recheado Leite 130g' (SKU: 12325232) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'PASSATEMPO Biscoito Fininho Avelã 57g' (SKU: 12571027) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'PASSATEMPO ChocoMix 150g' (SKU: 12407266) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'PASSATEMPO Chocomix Chocolate 130g' (SKU: 12379776) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'PASSATEMPO Chocomix Morango 130g' (SKU: 12379785) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'PASSATEMPO Gotas Chocolate 60g' (SKU: 12278536) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'PASSATEMPO Leite 150g' (SKU: 12045051) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'PASSATEMPO Leite Maltado 150g' (SKU: 12521371) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'PASSATEMPO Maisena 170g' (SKU: 12521363) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'PASSATEMPO Mini Wafer Chocolate 20g' (SKU: 12146795) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'PASSATEMPO Mini Wafer Morango 20g' (SKU: 12146794) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'PASSATEMPO Recheado Chocolate 130g' (SKU: 12325231) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'PASSATEMPO Recheado Morango 130g' (SKU: 12325104) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'PRESTIGIO Wafer 110g' (SKU: 12136357) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'PRESTÍGIO Gotas Chocolate 60g' (SKU: 12479709) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'PRESTÍGIO Recheado 140g' (SKU: 12182430) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'TOSTINES Coco 160g' (SKU: 12463873) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'TOSTINES Cracker Água 200g' (SKU: 418817) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'TOSTINES Espec Bisc Rech Cappu 66x93g' (SKU: 12616029) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'TOSTINES Especiarias 150g' (SKU: 12586084) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'TOSTINES Leite Maltado 48x160g N1' (SKU: 12606771) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'TOSTINES Maçã e Canela 160g' (SKU: 12463859) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTLE Aveia Farinha 170g' (SKU: 12559794) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTLÉ Aveia Farelo 170g' (SKU: 12559766) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTLÉ Aveia em Flocos 170g' (SKU: 12246308) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTLÉ Aveia em Flocos 170g + 20g Grátis' (SKU: 12531077) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTLÉ Aveia em Flocos 450g' (SKU: 12558277) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTLÉ Aveia em Flocos Finos 170g' (SKU: 12246309) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTLÉ Aveia em Flocos Finos 170g 20g grátis' (SKU: 12531076) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTLÉ Aveia em Flocos Finos 450g' (SKU: 12558286) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTLÉ Farinha Láctea 160g' (SKU: 12527418) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTLÉ Farinha Láctea Tradicional 360g' (SKU: 12513225) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTLÉ Farinha Láctea Tradicional 600g' (SKU: 12138557) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTON 3 Cereais 210g' (SKU: 12228413) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTON 3 Cereais 360g' (SKU: 12513226) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTON 3 cereais 600g' (SKU: 12418204) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTON Vitamina Maçã, Banana e Mamão 210g' (SKU: 12241562) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON Ameixa e Aveia 9x600g' (SKU: 12610213) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON Arroz 180g' (SKU: 12453877) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON Arroz 360g' (SKU: 12510173) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON Arroz e Aveia 180g' (SKU: 12453868) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON Arroz e Aveia 180g + 20g Grátis' (SKU: 12526259) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON Arroz e Aveia 360g' (SKU: 12510168) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON Aveia Integral e Ameixa 180g' (SKU: 12303027) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON BL 5 Cereais Zero 12x180g' (SKU: 12394435) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON BL 5 Cereais Zero 9x600g' (SKU: 12610403) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON BL Ava&Bna&Mc Zero 12x180g' (SKU: 12352836) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON MILHO 360g' (SKU: 12510167) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON Milho 180g' (SKU: 12453855) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON Milho 180g' (SKU: 12526285) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON Multicereais 180g' (SKU: 12453854) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON Multicereais 360g' (SKU: 12510108) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON Multicereais 400g' (SKU: 12105545) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON Multicereais 600g' (SKU: 12171055) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON Snack Pipoquinha Milho 35g' (SKU: 12561091) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON Snack Tomate 35g' (SKU: 12454380) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MUCILON Snack Tradicional 35g' (SKU: 12454355) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'CRUNCH Cereal Matinal 24x230g' (SKU: 12510020) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'CRUNCH Cereal Matinal Sachet 120g' (SKU: 12365022) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'KIT KAT Cereal Mat Sachet 12(16x25g)' (SKU: 12615709) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'KIT KAT Cereal Matinal 210g' (SKU: 12580999) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'KIT KAT Cereal Matinal 90g' (SKU: 12584239) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'MOÇA FLAKES Cereal Matinal 230g' (SKU: 12510030) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NEGRESCO Cereal Matinal 200g' (SKU: 12566987) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESCAU + SNOW FLAKES Cereal Matinal 440g' (SKU: 12517524) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESCAU Cereal Matinal 120g' (SKU: 12307595) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESCAU Cereal Matinal 14x540g' (SKU: 12518098) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESCAU Cereal Matinal Extra Cacau 170g' (SKU: 12533669) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESCAU Duo Cereal Matinal' (SKU: 12378133) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'NESTLE CORN FLAKES Cer Mat 24x190g' (SKU: 12511794) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'SNOW FLAKES CerMat Frutas 240g' (SKU: 12618462) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'SNOW FLAKES Cereal Matinal 120g' (SKU: 12307596) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'SNOW FLAKES Cereal Matinal 230g' (SKU: 12510643) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'SNOW FLAKES Cereal Matinal Leve 620g Pague 470g' (SKU: 12560459) adicionado ao PDF.
+2025-08-20 09:58:37 [INFO    ] src.pdf_builder: Produto 'ALPINO CHOCOLATE 195g' (SKU: 12099104) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'ALPINO Chocolate 14x85g' (SKU: 12447223) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'ALPINO Nevado Chocolate 14x85g' (SKU: 12447216) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'CHARGE Chocolate 30x40g' (SKU: 12590631) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'CHARGE Flowpack 117g' (SKU: 12377691) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'CHOKITO Chocolate 30x32g' (SKU: 414216) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'CHOKITO Flowpack 114g' (SKU: 12377692) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'CLASSIC Chocolate Ao Leite 16x80g' (SKU: 12527298) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'CLASSIC Diet Chocolate 22x25g' (SKU: 12227748) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'CLASSIC Duo Chocolate 16x80g' (SKU: 12527302) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'CLASSIC Meio Amargo 16x80g' (SKU: 12526304) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'CLASSIC Prestigio 16x80g' (SKU: 12527322) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'CRUNCH Chocolate 16x80g' (SKU: 12527434) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DIPLOMATA Chocolate 16x80g' (SKU: 12527297) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'GALAK Chocolate Branco 16x80g' (SKU: 12526320) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'KIT KAT 4 Fingers Branco 24x41,5g' (SKU: 12343630) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'KIT KAT Mini Moments Caramel 24x34,6g' (SKU: 12495098) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'KIT KAT Mini Moments Cookies 24x34,6g' (SKU: 12495099) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'KITKAT 4Fngr Dark 24x41,5g' (SKU: 12342558) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'LOLLO Chocolate 30x28g' (SKU: 12196210) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOCA Chocolate 24x38g' (SKU: 414057) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAU Ball Chocolate 12x75g' (SKU: 12478287) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Chocotrio Avela 12x90g' (SKU: 12614177) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Cob Choc Leite 20x500g' (SKU: 12380253) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLÉ CLASSIC Amendoirn 150g' (SKU: 12513483) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLÉ CLASSIC Choc Ao Leite 150g' (SKU: 12517928) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLÉ CLASSIC Duo Cookies 150g' (SKU: 12513468) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLÉ Cacau Em Pó Solúvel 200g' (SKU: 12321616) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLÉ Choc Em Pó Solúvel 200g' (SKU: 414513) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLÉ Chocotrio Leite 12x90g' (SKU: 12550953) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'PRESTIGIO Ao Leite Flowpack 114g' (SKU: 12368428) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'PRESTIGIO Branco Chocolate 30x33g' (SKU: 12350191) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'PRESTIGIO Dark Chocolate 30x33g' (SKU: 12316706) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'PRESTIGIO Maxi Chocolate 12x90g' (SKU: 12526305) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'SENSACAO Chocolate 24x38g' (SKU: 414050) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'SUFLAIR Chocolate Ao Leite 20x50g' (SKU: 12272482) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'SURFLAIR Chocolate Ao Leite 16x80g' (SKU: 12464249) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'SURFLAIR Chocolate Duo 16x80g' (SKU: 12464177) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'SBUX Colombia SO SRP 57g' (SKU: 6220511) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NAN Confor 0-6 Meses HMO 400g' (SKU: 12576093) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NAN Confor 0-6 Meses HMO 800g' (SKU: 12576102) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NAN LACTOSE FREE NLNW164 12x400g' (SKU: 12519484) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NAN SUPREME 0-6 Meses 4HMO 400g' (SKU: 12571372) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NAN SUPREME 0-6Meses 4HMO 6x800g' (SKU: 12549161) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'BATON Duo 30x16g' (SKU: 12155337) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'BATON Extra Milk 30x16g' (SKU: 12368980) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'CACAU Em Pó 200g' (SKU: 11320042) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'CAIXA Bombons Sortidos 250g' (SKU: 12458949) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'CAIXA SERENATA DE AMOR Bombbm 210,7g' (SKU: 12603891) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'CARIBE Candy Bars 30x28g' (SKU: 12482821) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'CHOCOLATE Em Pó 200g' (SKU: 11320040) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'CHOCOTRIO Bono Morango 12x90g' (SKU: 12581702) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'CHOCOTRIO Prestigio 12x90g' (SKU: 12601436) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'CROCRIBE 215,2g' (SKU: 12570879) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'PASTILHA Extra Forte 40x17g' (SKU: 12460228) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'PASTILHA Hortelã 40x17g' (SKU: 11322004) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'PASTILHA Mentol 40x17g' (SKU: 12460205) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'SERENATA DE AMOR Wafer Cstn 10x825g' (SKU: 12416237) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Amêndoas com Passas 12x85g' (SKU: 12492209) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Ao Leite Amendoim Passas 15x25g' (SKU: 11320197) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Ao Leite Castanha Pará 12x85g' (SKU: 12492203) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Ao Leite Castanha Pará 15x25g' (SKU: 11320198) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Ao Leite com Avelãs 12x85g' (SKU: 12492210) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Ao Leite com Avelãs 15x25g' (SKU: 11320209) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Branco Cereais e Passas 12x85g' (SKU: 12492199) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Branco Doce de Leite 12x85g' (SKU: 12492197) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Choc Branco 16x80g' (SKU: 12527435) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Choc Branco Biscoito 16x80g' (SKU: 12522829) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Choc Branco Cereais e Passas 15x25g' (SKU: 11320199) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Choc Caju Com Passas 16x80g' (SKU: 12526311) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Choc Castanha de Caju 16x80g' (SKU: 12522835) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Choc Crocante 16x80g' (SKU: 12522826) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Choc Crunch 16x80g' (SKU: 12584392) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Choc Leite Amendoim 122x50g' (SKU: 12533720) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Choc Leite Crocante 22x150g' (SKU: 12581977) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Choc Leite Negresco 22x150g' (SKU: 12581976) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Choc Meio Amargo 16x80g' (SKU: 12522825) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Diet com Avelãs 15x25g' (SKU: 11324001) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Meio Amargo Amêndoas 12x85g' (SKU: 12492202) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Meio Amargo Amêndoas 15x25g' (SKU: 12277350) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TABLETE Opereta Castanha Caju 12x85g' (SKU: 12496085) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TALENTO Tab Rech Morango 2x85g' (SKU: 12492216) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NUREN KIDS Morango 350g' (SKU: 12185378) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NUTREN ACTIVE PBIO 1 Baunilha 400g' (SKU: 412340) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NUTREN ACTIVE PBIO 1 Chocolate 400g' (SKU: 412341) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NUTREN ACTIVE PBIO 1 Morango 400g' (SKU: 412342) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NUTREN KIDS Baunilha 350g' (SKU: 12177187) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NUTREN KIDS Chocolate 350g' (SKU: 12177188) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NUTREN Protein 15g Baunilha 4(6x260ml)' (SKU: 12595468) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NUTREN Protein 15g RTD Choc 4(6x260ml)' (SKU: 12595377) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NUTREN Protein Chocolate Pó 400g' (SKU: 12429007) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NUTREN SENIOR Po Café c/ Leite 740g' (SKU: 12416364) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NUTREN SENIOR PÓ 740g' (SKU: 12248107) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NUTREN SENIOR Pó Baunilha 740g' (SKU: 12416339) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOCA Leite Cond Parc Desn Zr Lact Cxnha 395g' (SKU: 12451066) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOCA Leite Cond Semi Desn Caixinha 340g' (SKU: 12440848) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOCA Leite Cond Semi Desn Caixinha 395g' (SKU: 12091059) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLÉ Creme de Leite Uht 10% Gdr 200g' (SKU: 12413903) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLÉ Creme de Leite Uht 200g' (SKU: 411269) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NANLAC SUPREME 1+ 4HMO FI 800g' (SKU: 12549150) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESLAC COMFOR 3+ Cmpto Lact 800g' (SKU: 12549142) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Amaciante Carne Tempero' (SKU: 415013) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Caldo Bacon Tablete 10x57g' (SKU: 12344651) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Caldo Bacon Tablete 114g' (SKU: 12349928) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Caldo Carne Menos Sódio 114g' (SKU: 12355785) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Caldo Carne Menos Sódio 57g' (SKU: 12355789) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Caldo Carne Tablete 114g' (SKU: 12350073) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Caldo Carne Tablete 152g' (SKU: 12350100) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Caldo Carne Tablete 24x19g' (SKU: 12329922) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Caldo Galinha Menos Sódio 114g' (SKU: 12355810) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Caldo Galinha Menos Sódio 57g' (SKU: 12355788) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Caldo Galinha Tablete 10x57g' (SKU: 12344609) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Caldo Galinha Tablete 114g' (SKU: 12350064) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Caldo Galinha Tablete 152g' (SKU: 12350074) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Caldo Galinha Tablete 24x19g' (SKU: 12329921) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Caldo Legumes Menos Sódio 114g' (SKU: 12417921) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Caldo Legumes Tablete 10x57g' (SKU: 12346031) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Creme de Cebola 68g' (SKU: 415385) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Crm Ceb Menos Sodio 12x61g' (SKU: 12400662) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI FONDOR Tempero 120g' (SKU: 415014) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Meu Segredo Alho e Cebola 7x7g' (SKU: 12480738) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Meu Segredo Cheiro Verde 7x7g' (SKU: 12480745) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Meu Segredo Temp Gran 7x7g' (SKU: 415084) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Meu Segredo Tomate e Ervas 7x7g' (SKU: 12480752) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Sopa Cebola 68g' (SKU: 415306) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Sopão Carne 200g' (SKU: 415821) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Sopão Carne Menos Sódio 150g' (SKU: 12392355) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Sopão Carne Panela 200g' (SKU: 12223291) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Sopão Costela 200g' (SKU: 415400) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Sopão Galinha 200g' (SKU: 415820) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Sopão Galinha Caipira 200g' (SKU: 12041117) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Sopão Galinha Menos Sódio 150g' (SKU: 12392354) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Tempera e Amacia 10x5g' (SKU: 12583426) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Tempero Para Carnes 10x5g' (SKU: 12600503) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Tempero Para Feijao 10x5g' (SKU: 12600478) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Tempero Para Frango 10x5g' (SKU: 12600497) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Tempr Grnl p/ Carne 48(10x5g)' (SKU: 12611512) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Tempr Grnl p/ Legumes 48(10x5g)' (SKU: 12612574) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Tempr Grnul p/ Frango 48(10x5g)' (SKU: 12611501) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'ALPO Adulto Car Frg Cer Veg 10,1kg BR' (SKU: 12492195) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'ALPO Adulto Car Frg Cer Veg 10x1kg BR' (SKU: 12492196) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'ALPO Adulto Car Frg Cer Veg 18kg BR' (SKU: 12492194) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'ALPO Filhotes CarFrgCerVeg Lei 10x1kg BR' (SKU: 12489996) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'ALPO Filhotes CarFrgCerVegLei 10,1kg BR' (SKU: 12492201) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'BONZO Adultos Carne e Cereais 10,1kg BR' (SKU: 12414266) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'BONZO Adultos Carne e Cereais 10x1kg BR' (SKU: 12414389) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'BONZO Adultos Carne e Cereais 18kg BR' (SKU: 12310601) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'GATSY Carne 10,1kg N1 BR' (SKU: 12571524) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOLICO Lepo Desn Sac Total Calcio 500g' (SKU: 12240800) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOLICO Lepo Parcial Desn + Fibr 260g' (SKU: 12408826) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOLICO Zero Lact CmptolLact P6 260g' (SKU: 12351488) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESC AFRICAS SRP 12x44g R11' (SKU: 6600110) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESC ANDES SRP 44g' (SKU: 6620911) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESC COL SRP 44g' (SKU: 6621011) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESC SOUTH ASIA SRP 12x46g R11' (SKU: 6621511) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFE CAPPUCCINO Tral Lata 24x180g' (SKU: 12521749) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFE Descafeinado Sachet 40g' (SKU: 12561814) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFE GOLD ESPRS Intsd6 Lata 100g' (SKU: 12535219) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFE GOLD ESPRS Intsd8 Lata 100g' (SKU: 12535237) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFE GOLD Intsd 8 Sachet 40g' (SKU: 12562738) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFE Intensidade MaxT&M Sac 12x250g' (SKU: 12465559) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFE MATINAL SveFco 24x40g PR10%Dsc' (SKU: 12612342) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFE ORIGINAL XForteSac24x40gPR10%Des' (SKU: 12609999) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFE com Leite 12x300g' (SKU: 12501811) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFETRADICAO ForteSac24x40gPR10%Des' (SKU: 12610012) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFÉ Dolca Café 40g' (SKU: 12561840) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFÉ GOLD 6 Sachet 40g' (SKU: 12562774) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFÉ GOLD ESPRS Intsd 9 Lata 100g' (SKU: 12535260) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFÉ GOLD Intsd 9 Sachet 40g' (SKU: 12562754) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFÉ GOLD Torr e Moldo Equilibrado 250g' (SKU: 12406969) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFÉ GOLD Torr e Moldo Intenso 250G' (SKU: 12406968) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFÉ GOLD Torr e Moldo Suave 250g' (SKU: 12406967) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFÉ MATINAL 100g' (SKU: 12029565) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFÉ MATINAL Suave Sachet 40g' (SKU: 12442256) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFÉ TRADIÇÃO 100g' (SKU: 12029252) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'SBUX Dark Caffe Verona R&G 250g' (SKU: 12447561) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'SBUX Medium Pike Place RST R&G 12x250g' (SKU: 12447487) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NINHO Adulto Leite Em Pó 350g' (SKU: 12584369) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NINHO Cmpto Lact Zero Lactose 700g' (SKU: 12586515) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NINHO Cmpto Lact Zero lactose 380g' (SKU: 12586516) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NINHO CmptoLact Fibras Sac 350g' (SKU: 12587774) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NINHO CmptoLact Fibras Sac 750g' (SKU: 12589528) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NINHO CmptoLact Fibras Sachet 150g' (SKU: 12558433) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NINHO Idade Escolar 380g' (SKU: 12584520) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NINHO Idade Escolar 750g' (SKU: 12584504) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NINHO Leite Integral Inst Sac 350g' (SKU: 12582874) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NINHO Leite Integral Inst Sac 575g' (SKU: 12582856) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NINHO Leite Integral Inst Sac 750g' (SKU: 12577839) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NINHO Leite Pó Integral Sac 350g' (SKU: 12583436) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NINHO Leite Pó Integral Sachet 575g' (SKU: 12582848) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NEGRESCO Bisc Granulado NPro 6x1000g' (SKU: 419489) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'TOSTINES Biscoito Granulado NPro 6x1kgBR' (SKU: 12607311) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'Chocolate Po 50% NPro 25kg' (SKU: 414530) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'GALAK Rech&Cob Negresco 6x1,01kg NPro BR' (SKU: 12494461) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'GALAK Rech&CobSabChocbra 6x1,01kgNProBR' (SKU: 12462203) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'GAROTO Cob Choc Branco 5x2,1kg' (SKU: 12144488) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'GAROTO Cob Choc Meio Amargo 5x2,1kg BR' (SKU: 12144489) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'GAROTO Cob Choc ao Leite Blend 5x2,1kgBR' (SKU: 12144515) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'GAROTO Cob Sabor Choc AoLei NPro12x1kgBR' (SKU: 12611191) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'GAROTO Cob Sabor ChocAoLei NPro5x2,1kgBR' (SKU: 12611545) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'GAROTO Cobert Choc Ao Leite 2,1Kg' (SKU: 12144708) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'GAROTO Cobert Choc Meio Amargo 1Kg' (SKU: 11320309) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'GAROTO Cobert ChocLeite Blend 12x1kg BR' (SKU: 11321851) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'GAROTO Cobertura Choc Ao Leite 12x1kg XW' (SKU: 11320308) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'GAROTO Cobertura Choc Branco 12x1kg XW' (SKU: 11320339) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'KITKAT Rech&Cob Choc NPro 6x1,01kg' (SKU: 12439522) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Choc Po Solu 32% NPro 9x1,01kg BR' (SKU: 12520114) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Choc Po Solu 50% NPro 9x1,01kg BR' (SKU: 12520104) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Cob Choc Blend NPro 2,1kg BR' (SKU: 12351875) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Cob Choc Leite NPro 2,1kg' (SKU: 12351872) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Cob Choc Mamgo NPro 2,1 kg' (SKU: 12351874) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Cob Chocolate Blend NPro 1kgBR' (SKU: 12255810) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Cob Chocolate Diet NPro 500g XR' (SKU: 412234) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Cob Chocolate Leite Npro 1kgBR' (SKU: 12255811) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Cob Chocolate Mamgo NPro 1kgBR' (SKU: 12255812) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Cob Chocolate Marfim NPro1kgBR' (SKU: 12255799) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Cobert Choc Marfim NPro 2,1 kg' (SKU: 12351873) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE DoisFrades Pasta NPro 6x1,01kg BR' (SKU: 12527441) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE NPro Cob Rech Ganache 6x2,330kgBR' (SKU: 12073778) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'PRESTIGIO Pasta NPro 6x1,01kg BR' (SKU: 12581664) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Amaciante de Carne NPro 6x1,1kg BR' (SKU: 12168361) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Base Demi Glace NPro 6x600g BR' (SKU: 12575461) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Caldo de Carne NPro 6x1,01kg BR' (SKU: 12320782) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Caldo de Galinha NPro 6x1,01kg BR' (SKU: 12320781) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI Creme de Cebola NPro 6x1kg XW' (SKU: 415328) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI FONDOR Tempero NPro 6x1,1kg BR' (SKU: 12168360) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MAGGI GRIL Tempero NPro 6x1,1kg BR' (SKU: 12168362) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'ALPINO Recheio NPro 6x2,54kg BR' (SKU: 12346804) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'CHARGE Recheio NPro 6x2,4kg BR' (SKU: 12318446) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOCA Beijinho NPro 6x2400g XW' (SKU: 411522) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOCA Brigadeiro NPro 6x2,570kg BR' (SKU: 12220263) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOCA Brigadeiro NPro 8x1,01kg BR' (SKU: 12479825) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOCA Caramelo Salgado NPro 8x980g BR' (SKU: 12524409) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOCA Chocolate NPro 2,540kg' (SKU: 411526) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOCA Doce de Leite 8x1,01kg NPro BR' (SKU: 12479830) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOCA Doce de Leite NPro 5x3kg' (SKU: 12133006) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOCA Doce de Leite NPro 6x2,540g XW' (SKU: 411524) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOCA Leite Cond Semi Desn NPro 5x3kg BR' (SKU: 12595044) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOCA Leite Condensado Bag NPro 5x3kg BR' (SKU: 12554556) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOCA Leite Condensado NPro 6kg' (SKU: 411059) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOCA Recheio LeiteCondensado NPro,6kg' (SKU: 415533) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'MOCA Recheio Morango NPro 6x2,6kg BR' (SKU: 12209621) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Creme Culinario Veg NPro 1kg BR' (SKU: 12583425) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Creme de Lei Lata NPro 48x300g' (SKU: 12267768) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Creme de Leite UHT NPro 12x1kg BR' (SKU: 12133134) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Nestilly UHT NPro 12x1kg' (SKU: 12133009) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NINHO Recheio NPro 6x2,61kg BR' (SKU: 12608991) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Brownie Choc 6x800g NPro BR' (SKU: 12383749) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Chocbra Mse 8x500g NPro BR' (SKU: 12383806) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Chocolate Mousse NPro 8x500g BR' (SKU: 413522) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAU ACTIGEN-E Achoc Po NPro 4x2kg' (SKU: 12330469) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESTLE Rech Torta 6x600g NPro' (SKU: 12383770) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DOG CHOW Oral Med Gde 20x80g BR' (SKU: 12384866) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DOG CHOW Oral Pequeno 20x105g BR' (SKU: 12384867) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DOG CHOW Oral Pequeno 20x45g BR' (SKU: 12384868) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'FRISKIES Mar de Sabores 10,1kg BR' (SKU: 12520236) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'FRISKIES Mar de Sabores 10x1kg BR' (SKU: 12519989) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'FRISKIES Mar de Sabores 20kg BR' (SKU: 12520225) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'FRISKIES Mar de Sabores 6x3kg BR' (SKU: 12519988) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'FRISKIES Megamix Adulto 10,1kg BR' (SKU: 12519868) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'FRISKIES Megamix Adulto 10x1kg BR' (SKU: 12519758) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'FRISKIES Megamix Adulto 6x3kg BR' (SKU: 12519762) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'FRISKIES Mix Carne Adulto 10,1kg BR' (SKU: 12520229) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'FRISKIES Mix Carne Adulto 20kg BR' (SKU: 12520226) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'FRISKIES Mix Carne Castrados 10,1kg BR' (SKU: 12519873) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DCHOW XLfe Lact FilhMedGdeCarFrArz15kgBR' (SKU: 12562153) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DCHOW XLfeLact FilhMnPeqCarFrgArz5x3kgBR' (SKU: 12562302) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DCHOWXLfeLactFilhMedGdeCarFrgArz10,1kgBR' (SKU: 12562154) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DCHOWXLfeLactFilhMedGdeCarFrgArz10x1kgBR' (SKU: 12562402) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DCHOWXLfeLactFilhMnPeqCarFrgArz10x1kgBR' (SKU: 12562286) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DOGCHOWExtraLife7+CarFrgArz10x1kgBR' (SKU: 12496082) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DOGCHOWXLfeAdltMedGdeCarFrgArz10,1kgBR' (SKU: 12496013) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DOGCHOWXLfeAdltMedGdeCarFrgArz20kgBR' (SKU: 12496089) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DOGCHOWXLfeAdltMnPeqCarFrgArz10,1kgBR' (SKU: 12496010) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DOGCHOWXLfeAdltMnPeqCarFrgArz20kgBR' (SKU: 12496103) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'FRISKIES Petiscos Salmao 15x80g BR' (SKU: 12601967) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFE CAPPU ChelaBebGarr 6x270ml' (SKU: 12571139) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFE CAPPU ClasProEnergy 6x270ml' (SKU: 12610767) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFE CAPPU ProEnergy Canl 6x270ml' (SKU: 12610745) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFE Chocno Beb Garrafa Plas 6x270ml' (SKU: 12571161) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFE LATTE BebGarrPlas 6x270ml' (SKU: 12571160) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAFE ProEnergy Chocno 6x270ml' (SKU: 12610829) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAU ACT-GO O BebExtraCacau 6x270ml' (SKU: 12591179) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'SBUX Frappuccino Classic 6x280ml' (SKU: 12528243) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'SBUX Frappuccino Mocha 6x280ml' (SKU: 12531949) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'STARBUCKS Frappucciono Crml 6x280ml' (SKU: 12528254) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESCAU Beb Menos Acucar Zr Lact 180ml' (SKU: 12558441) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESQUIK Bebida Láctea Morango 180ml' (SKU: 12523120) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG Alpino Intense 10Caps 6x180g' (SKU: 12586548) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG Alto Paranaiba 10Caps 6x60g' (SKU: 12603778) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG CAFE AU LAIT Desn 10Caps 6x100g' (SKU: 12551303) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG CAPPUCCINO Ddl 10Caps 170g' (SKU: 12551473) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG Café Au Lait 10Caps 6x100g' (SKU: 12551459) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG Café Au Lait Baunilha 10Caps' (SKU: 12551271) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG Café Caseiro 10Caps 6x80g' (SKU: 12551249) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG Cappuccino 10Caps 6x117g' (SKU: 12551301) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG Chapada Diamantina 10Caps 6x60g' (SKU: 12603785) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG ESPRS Cerrado Mineiro 10Caps 6x60g' (SKU: 12591103) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG Espresso 10Caps 6x60g' (SKU: 12551265) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG Genio SSP Black 220v' (SKU: 12447686) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG LUNGO 10Caps 6x70g' (SKU: 12551448) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG Latte Macchiato 10Caps 6x112,5g' (SKU: 12551463) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG Moca Brigadeiro 10Caps 6x170g' (SKU: 12601139) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG Mochaccino Avela 10Caps 6x170g' (SKU: 12555193) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG Mochaccino Canela 10Caps 6x172g' (SKU: 12551246) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG Nescau 10Caps 6x170g' (SKU: 12551257) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG Origem Orgânico 10Caps 6x80g' (SKU: 12552456) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NDG Pingado 10Caps 6x140g' (SKU: 12577926) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'NESC DLC GST Doppio 10Caps 6x80g' (SKU: 12558494) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'SBUX Medium Columb 10 Caps 55g' (SKU: 12572613) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'SBUX Wnt Crml Mac 10 Caps 106,5g' (SKU: 12574654) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DOG CHOW Biscoito Filh FrgLei 16x300g BR' (SKU: 12590501) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DOG CHOW BiscoitosFrg MedGde 16x500gN1BR' (SKU: 12592351) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DOGCHOW BiscoitosFrg MiniPeq 16x500gN1BR' (SKU: 12592352) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'FRISKIES Petiscos Carne 15x40g N2 BR' (SKU: 12598254) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'FRISKIES Petiscos Frango 15x40g N1 BR' (SKU: 12598255) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'FRISKIES Petiscos Salmao 15x40g BR' (SKU: 12598146) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'ONEFilhTdTm c/Frango&CarneDeVdd11x700gBR' (SKU: 12454127) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'ASCENDA Suplemento Baunilha 12x364g' (SKU: 12537264) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'ASCENDA Suplemento s/ Sabor 6x800g' (SKU: 12492697) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'RESOURCE FBRMSDspI 10x5g' (SKU: 9522889) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DOG CHOW Adlt Mini Peq Carne 15x100g BR' (SKU: 12405428) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DOG CHOW Adlt Mini Peq Frango 15x100g BR' (SKU: 12405471) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DOG CHOW Adlt TdTm Carne 15x100g BR' (SKU: 12405475) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DOG CHOW Adlt TdTm Cordeiro 15x100g BR' (SKU: 12405477) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DOG CHOW Adlt TdTm Frango 15x100g BR' (SKU: 12405432) adicionado ao PDF.
+2025-08-20 09:58:38 [INFO    ] src.pdf_builder: Produto 'DOG CHOW Filh TdTm Carne 15x100g BR' (SKU: 12405472) adicionado ao PDF.

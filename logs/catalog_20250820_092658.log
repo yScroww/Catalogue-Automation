@@ -1,0 +1,27 @@
+2025-08-20 09:26:58 [INFO    ] src.utils.excel: Logger configurado. Arquivo de log: logs/catalog_20250820_092658.log
+2025-08-20 09:26:58 [INFO    ] src.utils.images: Logger configurado. Arquivo de log: logs/catalog_20250820_092658.log
+2025-08-20 09:26:58 [INFO    ] __main__: Logger configurado. Arquivo de log: logs/catalog_20250820_092658.log
+2025-08-20 09:26:58 [INFO    ] __main__: Iniciando geração do catálogo em PDF...
+2025-08-20 09:26:58 [INFO    ] src.utils.excel: Carregando planilha: data/products.xlsx
+2025-08-20 09:26:58 [ERROR   ] src.utils.excel: Arquivo não encontrado: data/products.xlsx
+2025-08-20 09:26:58 [ERROR   ] __main__: Erro fatal ao gerar catálogo: [Errno 2] No such file or directory: 'data/products.xlsx'
+Traceback (most recent call last):
+  File "C:\Users\gustavo\Documents\Automation project\Catalogue-Automation\src\main.py", line 52, in main
+    df, c_sku, c_nome, c_cat, c_img = load_product_data(args.excel)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gustavo\Documents\Automation project\Catalogue-Automation\src\utils\excel.py", line 27, in load_product_data
+    df = pd.read_excel(file_path, sheet_name='Catálogo de Produtos')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gustavo\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\gustavo\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gustavo\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+         ^^^^^^^^^^^
+  File "C:\Users\gustavo\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'data/products.xlsx'

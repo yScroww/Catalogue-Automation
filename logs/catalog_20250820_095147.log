@@ -1,0 +1,7 @@
+2025-08-20 09:51:47 [INFO    ] src.utils.images: Logger configurado. Arquivo de log: logs/catalog_20250820_095147.log
+2025-08-20 09:51:47 [INFO    ] __main__: Logger configurado. Arquivo de log: logs/catalog_20250820_095147.log
+2025-08-20 09:51:47 [INFO    ] __main__: Iniciando geração do catálogo em PDF...
+2025-08-20 09:51:47 [INFO    ] __main__: Planilha de produtos carregada com 575 itens.
+2025-08-20 09:51:47 [INFO    ] __main__: Planilha de links de imagens carregada com 1229 registros.
+2025-08-20 09:51:47 [DEBUG   ] __main__: Mesclagem concluída entre produtos e links de imagem.
+2025-08-20 09:51:48 [INFO    ] __main__: Produtos processados e ordenados.

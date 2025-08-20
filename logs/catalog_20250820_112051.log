@@ -1,0 +1,3 @@
+2025-08-20 11:20:51 [INFO    ] src.utils.images: Logger configurado. Arquivo de log: logs/catalog_20250820_112051.log
+2025-08-20 11:20:51 [INFO    ] __main__: Logger configurado. Arquivo de log: logs/catalog_20250820_112051.log
+2025-08-20 11:20:51 [INFO    ] __main__: Iniciando geração do catálogo em PDF...

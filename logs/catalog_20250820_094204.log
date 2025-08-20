@@ -1,0 +1,14 @@
+2025-08-20 09:42:04 [INFO    ] src.utils.excel: Logger configurado. Arquivo de log: logs/catalog_20250820_094204.log
+2025-08-20 09:42:04 [INFO    ] src.utils.images: Logger configurado. Arquivo de log: logs/catalog_20250820_094204.log
+2025-08-20 09:42:04 [INFO    ] __main__: Logger configurado. Arquivo de log: logs/catalog_20250820_094204.log
+2025-08-20 09:42:04 [INFO    ] __main__: Iniciando geração do catálogo em PDF...
+2025-08-20 09:42:04 [INFO    ] src.utils.excel: Carregando planilha: data/produtos.xlsx
+2025-08-20 09:42:05 [INFO    ] src.utils.excel: Coluna 'Imagem' não encontrada na planilha de produtos, usando apenas a base de links de imagem.
+2025-08-20 09:42:05 [INFO    ] src.utils.excel: 575 produtos após remover valores nulos
+2025-08-20 09:42:05 [INFO    ] __main__: Planilha de produtos carregada com 575 itens.
+2025-08-20 09:42:05 [INFO    ] src.utils.excel: Carregando planilha de imagens: data/base_imagens.xlsx
+2025-08-20 09:42:05 [WARNING ] src.utils.excel: Foram encontradas e removidas 1493 SKUs duplicadas na base de imagens.
+2025-08-20 09:42:05 [INFO    ] src.utils.excel: 1229 links de imagem e fornecedor válidos encontrados
+2025-08-20 09:42:05 [INFO    ] __main__: Planilha de links de imagens carregada com 1229 registros.
+2025-08-20 09:42:05 [DEBUG   ] __main__: Mesclagem concluída entre produtos e links de imagem.
+2025-08-20 09:42:07 [INFO    ] __main__: Produtos processados e ordenados.
