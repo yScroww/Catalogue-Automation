@@ -2,10 +2,16 @@ import argparse
 import pandas as pd
 import logging
 import os
+
 from src.pdf_builder import create_catalog_pdf
 from src.utils.logger import get_logger
 from src.utils.excel import load_product_data, load_image_links
-from src.utils.images import find_image_for_sku, download_image, optimize_image
+from src.utils.images import (
+    find_image_for_sku,
+    download_image,
+    optimize_image,
+    auto_crop_image
+)
 
 logger = get_logger(__name__)
 
@@ -36,7 +42,7 @@ def parse_args():
     parser.add_argument("--max-products", type=int, default=0,
                         help="Número máximo de produtos a processar (0 para todos)")
     
-    # Argumentos de layout não são mais necessários para PDF (serão ignorados)
+    # Argumentos de layout (ignorados no PDF)
     parser.add_argument("--layout", help=argparse.SUPPRESS)
     parser.add_argument("--cols", type=int, help=argparse.SUPPRESS)
     parser.add_argument("--rows", type=int, help=argparse.SUPPRESS)
@@ -44,11 +50,13 @@ def parse_args():
     return parser.parse_args()
 
 def main():
+    """
+    Função principal que orquestra a geração do catálogo.
+    """
     try:
         args = parse_args()
-        
         logger.info("Iniciando geração do catálogo em PDF...")
-        
+
         # 1. Carrega dados
         df, c_sku, c_nome, c_cat, c_img = load_product_data(args.excel)
         logger.info(f"Planilha de produtos carregada com {len(df)} itens.")
@@ -85,18 +93,32 @@ def main():
             if not image_path and final_image_url and final_image_url != 'nan' and not args.skip_download:
                 image_path = download_image(final_image_url, product_dict['SKU'], args.imagens)
             
-            # --- Adicionado: Otimiza a imagem antes de adicionar ao PDF ---
+            # Otimiza e faz corte inteligente antes de adicionar ao PDF
             if image_path:
-                base_name, ext = os.path.splitext(os.path.basename(image_path))
+                base_name, _ = os.path.splitext(os.path.basename(image_path))
                 optimized_path = os.path.join(args.imagens, f"optimized_{base_name}.jpg")
-                optimize_image(image_path, optimized_path)
                 
-                # Usa o caminho da imagem otimizada para o PDF
-                product_dict['image_path'] = optimized_path
+                if optimize_image(image_path, optimized_path):
+                    # Corte inteligente do "subtítulo" (dinâmico, só quando existir)
+                    ok = auto_crop_image(
+                        optimized_path,
+                        padding=16,                 # margem extra ao calcular o bbox
+                        bg_tolerance=24,            # tolerância para considerar "quase branco"
+                        text_row_density=0.12,      # densidade máxima de pixels "não fundo" para considerar linha como texto
+                        uniform_row_std=6.0,        # std máx para considerar linha muito uniforme (faixa sólida)
+                        max_subtitle_fraction=0.35, # no máx 35% da altura pode ser removida como subtítulo
+                        final_square_size=800       # saída quadrada (evita desalinhamento)
+                    )
+                    if ok:
+                        logger.info(f"Imagem do produto '{product_dict['SKU']}' otimizada e cortada automaticamente.")
+                        product_dict['image_path'] = optimized_path
+                    else:
+                        logger.warning(f"Corte automático não aplicado para SKU {product_dict['SKU']}.")
+                        product_dict['image_path'] = optimized_path
+                else:
+                    product_dict['image_path'] = None
             else:
-                # Se não houver imagem, garante que o caminho seja None
                 product_dict['image_path'] = None
-            # -----------------------------------------------------------------
             
             if product_dict['image_path'] or args.include_no_image:
                 products.append(product_dict)
@@ -107,6 +129,7 @@ def main():
 
         # 7. Gera o catálogo em PDF
         create_catalog_pdf(products, args.out)
+        logger.info(f"Catálogo gerado em '{args.out}'.")
         
     except Exception as e:
         logger.error(f"Erro fatal ao gerar catálogo: {str(e)}", exc_info=True)

@@ -1,0 +1,146 @@
+2025-08-21 11:22:28 [INFO    ] src.pdf_builder: Logger configurado. Arquivo de log: logs/catalog_20250821_112228.log
+2025-08-21 11:22:28 [INFO    ] src.utils.excel: Logger configurado. Arquivo de log: logs/catalog_20250821_112228.log
+2025-08-21 11:22:29 [INFO    ] src.utils.excel: Carregando planilha: data/produtos.xlsx
+2025-08-21 11:22:29 [INFO    ] src.utils.excel: Coluna 'Imagem' não encontrada na planilha de produtos, usando apenas a base de links de imagem.
+2025-08-21 11:22:29 [INFO    ] src.utils.excel: 575 produtos após remover valores nulos
+2025-08-21 11:22:29 [INFO    ] src.utils.excel: Carregando planilha de imagens: data/base_imagens.xlsx
+2025-08-21 11:22:30 [WARNING ] src.utils.excel: Foram encontradas e removidas 1493 SKUs duplicadas na base de imagens.
+2025-08-21 11:22:30 [INFO    ] src.utils.excel: 1229 links de imagem e fornecedor válidos encontrados
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Iniciando a criação do PDF em 'catalogo_gerado.pdf' com layout 4x4.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 7 produtos da Família '07A - NESCAFÉ'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 6 produtos da Família 'NESCAU LATA'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'NESCAU SACHET'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'NESQUIK'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 11 produtos da Família 'BISCOITOS COOKIES'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 6 produtos da Família 'BISCOITOS RECHEADOS BONO'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 10 produtos da Família 'BISCOITOS WAFER'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'BISCOITOS COBERTOS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 6 produtos da Família 'BISCOITOS RECHEADOS OUTROS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 7 produtos da Família 'BISCOITOS CHOCOCOOKIES'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 8 produtos da Família 'BISCOITOS RECHEADOS PASSATEMPO'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 6 produtos da Família 'BISCOITOS RECHEADOS NEGRESCO'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 8 produtos da Família 'BISCOITOS PLENOS DOCES NESFIT'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 4 produtos da Família 'BISCOITOS PLENOS DOCES PASSATEMPO'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 4 produtos da Família 'BISCOITOS PLENOS DOCES TOSTINES'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'BISCOITOS PLENOS SALGADOS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 8 produtos da Família 'NESTLE AVEIAS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'FARINHA LÁCTEA SACHET ATE 400G'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'NESTON SACHET'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'NESTON LATA'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'MUCILON SACHET 600g'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 7 produtos da Família 'MUCILON SACHET ATE 230g'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 4 produtos da Família 'MUCILON SACHET 360g'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'MUCILON ZERO'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'MUCILON TRAD LATA'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'MUCILON SNACKS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 5 produtos da Família 'DEMAIS CEREAIS MATINAIS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'KIT KAT'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'NESCAU 300G+'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 4 produtos da Família 'NESCAU CEREAL'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'SNOW ATE 300G'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'SNOW 300G+'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 4 produtos da Família 'BOMBONS NESTLÉ'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 12 produtos da Família 'JUMBOS NESTLÉ'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'CHARGE'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'CANDY BARS NESTLE'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 4 produtos da Família 'TABLETES NESTLÉ'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'KIT KAT 4 FINGERS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'KIT KAT MINI MOMENTS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'KITKAT 4Fngr Dark'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'PRESTIGIO'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'CONFEITOS NESTLE'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'JUMBOS ESPECIAIS NESTLÉ'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'COBERTURAS NESTLE'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'JUMBOS FAMILIARES NESTLÉ'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'PÓS NESTLÉ'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'STARBUCKS CAPS NESPRESSO'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'FAMILIA NAN CONFOR'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'FORMULAS ESPECIAIS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'FAMILIA NAN SUPREME'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'BATON'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'PÓS GAROTO'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'CAIXAS GAROTO'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'CANDY BARS GAROTO'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'JUMBOS ESPECIAIS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'PASTILHAS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'BOMBONS GAROTO'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 8 produtos da Família 'TALENTO 75/95G'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 6 produtos da Família 'TABLETES'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 6 produtos da Família 'JUMBOS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 4 produtos da Família 'JUMBOS FAMILIARES'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'NUTREN KIDS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 6 produtos da Família 'NUTREN ACTIVE'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'NUTREN SENIOR'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'MOCA CAIXINHA'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'CREME TP'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'NANLAC SUPREME'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'NESLAC COMFOR'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'TEMPEROS VIDRO'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 15 produtos da Família 'CALDOS TABLE'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'DEMAIS SOPAS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 4 produtos da Família 'TEMPEROS CARTONADOS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 7 produtos da Família 'SOPÃO'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 4 produtos da Família 'TEMPEROS SACHET'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'TEMPEROS GRANULADO SACHET'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'ALPO LARGE BAGS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'ALPO SMALL BAGS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'BONZO DRY LARGE BAGS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'BONZO DRY SMALL BAGS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'GATSY DRY LARGE BAGS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'MOLICO LATA + SACHET'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'MOLICO ESPECIAIS '.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 4 produtos da Família 'NESCAFE CAPS NESPRESSO'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'DEMAIS NESCAFE'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 6 produtos da Família 'NESCAFÉ 40g'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 6 produtos da Família 'SOLUVEL PREMIUM'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 4 produtos da Família 'TORRADO E MOÍDO PREMIUM'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'NESCAFÉ MATINAL'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'NESCAFÉ TRADIÇÃO'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'STARBUCKS T&M'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'NINHO ADULTO'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'NINHO ZERO LACTOSE'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'NINHO FORTI+'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'NINHO IDADE ESCOLAR'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 5 produtos da Família 'NINHO INSTANTANEO SACHET'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'BISCOITOS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'CHOCOLATE PO'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 5 produtos da Família 'PASTAS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 8 produtos da Família 'COBERTURA GAROTO'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'COMPOUND'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 8 produtos da Família 'COBERTURA REGULAR'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'COBERTURA NOBRE'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'GANACHE'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'MAGGI TEMPEROS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'MAGGI MOLHOS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'MAGGI CALDOS '.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'MAGGI MEALS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 13 produtos da Família 'TOP LACTEOS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'CONDENSADOS SEMI-DESNATADO'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'CONDENSADOS INTEGRAL'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 4 produtos da Família 'CREMES'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'SOBR POS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'SOBR MOUSSE'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'NP CHOC INGREDIENT'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'NP SOBREMESAS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'DOG CHOW ORAL SNACKS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 6 produtos da Família 'FRISKIES DRY LARGE BAGS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 4 produtos da Família 'FRISKIES DRY SMALL BAGS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 6 produtos da Família 'DOG CHOW DRY LARGE BAGS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 4 produtos da Família 'DOG CHOW DRY SMALL BAGS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'FRISKIES TREATS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 9 produtos da Família 'RTD ADULTOS CAFÉS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'RTD ADULTOS REGULAR'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'RTD KIDS ESPECIAIS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 7 produtos da Família 'TABLETES NESTLÉ'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 9 produtos da Família 'DEMAIS BEBIDAS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'QUERIDINHOS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'QUERIDINHOS CAFÉS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'MÁQUINAS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'STARBUCKS CAPS NDG'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'DOG CHOW BISCUITS SNACKS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 3 produtos da Família 'FRISKIES TREATS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'ONE DRY DOG SMALL BAGS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 2 produtos da Família 'ASCENDA'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 1 produtos da Família 'FIBER MAIS'.
+2025-08-21 11:22:51 [INFO    ] src.pdf_builder: Adicionados 6 produtos da Família 'DOG CHOW WET POUCH'.
+2025-08-21 11:23:16 [INFO    ] src.pdf_builder: Catálogo criado com sucesso em 'catalogo_gerado.pdf'.
