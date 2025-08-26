@@ -1,3 +1,0 @@
-2025-08-18 09:12:55 [INFO    ] src.utils.excel: Logger configurado. Arquivo de log: logs/catalog_20250818_091255.log
-2025-08-18 09:12:55 [INFO    ] src.utils.excel: Planilha carregada: data/produtos.xlsx com 591 registros
-2025-08-18 09:12:55 [ERROR   ] src.utils.excel: Erro ao carregar dados de produtos: A planilha precisa ter colunas para SKU, Nome e Categoria

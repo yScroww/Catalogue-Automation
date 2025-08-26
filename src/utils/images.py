@@ -1,3 +1,4 @@
+# src/utils/images.py
 import os
 import requests
 import numpy as np
@@ -9,7 +10,6 @@ from .logger import get_logger
 
 logger = get_logger(__name__)
 MAX_WIDTH = 800
-
 
 # -------------------------
 # Localização / Download
@@ -59,10 +59,10 @@ def download_image(url: str, sku: str, img_dir: str) -> Optional[str]:
         # Redimensiona se for muito grande
         if img.width > MAX_WIDTH:
             height = int(img.height * (MAX_WIDTH / img.width))
-            img = img.resize((MAX_WIDTH, height), Image.LANCZOS)
+            img = img.resize((MAX_WIDTH, height), Image.Resampling.LANCZOS)
             logger.info(f"Imagem do SKU {sku} redimensionada para {MAX_WIDTH}x{height} pixels.")
         
-        img.save(file_path, 'JPEG', quality=95)
+        img.save(file_path, 'JPEG', quality=80)
         
         if os.path.getsize(file_path) > 0:
             logger.info(f"Imagem processada e salva com sucesso: {file_path}")
@@ -86,7 +86,6 @@ def download_image(url: str, sku: str, img_dir: str) -> Optional[str]:
         logger.error(f"Erro inesperado ao baixar ou salvar imagem para SKU {sku}: {e}")
 
     return None
-
 
 # -------------------------
 # Validação / Utilitários
@@ -117,7 +116,7 @@ def get_image_dimensions(image_path: str) -> Optional[Tuple[int, int]]:
         return None
 
 
-def optimize_image(input_path: str, output_path: str, max_size=(800, 800), quality=90) -> bool:
+def optimize_image(input_path: str, output_path: str, max_size=(800, 800), quality=80) -> bool:
     """
     Otimiza a imagem redimensionando-a e comprimindo-a.
     Mantém proporção e nunca amplia.
@@ -132,7 +131,6 @@ def optimize_image(input_path: str, output_path: str, max_size=(800, 800), quali
         logger.error(f"Erro ao otimizar a imagem em '{input_path}': {e}")
         return False
     return True
-
 
 # -------------------------
 # Corte Inteligente
@@ -213,80 +211,56 @@ def _paste_on_square(img: Image.Image, size: int = 800, bg=(255, 255, 255)) -> I
     return canvas
 
 
-def auto_crop_image(
-    image_path: str,
-    padding: int = 12,
-    bg_tolerance: int = 20,
-    text_row_density: float = 0.10,
-    uniform_row_std: float = 5.0,
-    max_subtitle_fraction: float = 0.30,
-    final_square_size: int = 800
-) -> bool:
-    """
-    Corta dinamicamente a faixa de “subtítulo” quando presente e remove bordas,
-    sem cortar imagens que não precisam. Em seguida, exporta em formato quadrado.
-
-    Estratégia:
-      1) Converter para RGB e medir, por linha, (a) densidade de pixels "não-fundo"
-         (distantes do branco) e (b) uniformidade da linha (desvio padrão baixo = faixa sólida).
-      2) Subir a partir da base enquanto a linha tiver:
-            - densidade baixa (apenas texto fino) OU
-            - for muito uniforme (faixa sólida),
-         limitado por 'max_subtitle_fraction' da altura.
-      3) Remover bordas laterais/topo via bounding-box de pixels "não-fundo".
-      4) Colar resultado em um canvas quadrado para uniformizar o layout no PDF.
-
-    Parâmetros ajustáveis:
-      - bg_tolerance: tolerância para considerar um pixel como “fundo quase branco”.
-      - text_row_density: densidade máxima para classificar linha com “texto fino”.
-      - uniform_row_std: se std somado da linha for menor que este valor, tratamos como faixa sólida.
-      - max_subtitle_fraction: proteção para não cortar demais (percentual da altura).
-      - final_square_size: tamanho final do quadrado de saída (ex.: 800).
-    """
+def auto_crop_image(image_path: str,
+    padding=12, bg_tolerance=20, text_row_density=0.10,
+    uniform_row_std=5.0, max_subtitle_fraction=0.30,
+    final_square_size=800) -> bool:
     try:
         with Image.open(image_path) as im:
             im = im.convert('RGB')
-            rgb = _to_numpy_rgb(im)
-            h, w, _ = rgb.shape
+            arr = np.asarray(im)
+            h,w,_ = arr.shape
 
-            # 1) Métricas por linha
-            nonwhite_ratio, row_std_sum = _compute_nonwhite_and_std(rgb, bg_tolerance)
+            # Métricas por linha
+            diff = np.abs(255-arr).sum(axis=2)
+            mask = diff>(3*bg_tolerance)
+            nonwhite = mask.mean(axis=1)
+            std_rows = arr.std(axis=2).mean(axis=1)
 
-            # 2) Corte dinâmico do subtítulo (de baixo para cima)
-            max_cut_rows = int(h * max_subtitle_fraction)
-            cut_from_bottom = 0
-            for i in range(h - 1, max(h - 1 - max_cut_rows, -1), -1):
-                line_is_sparse_text = nonwhite_ratio[i] < text_row_density
-                line_is_uniform_band = row_std_sum[i] < uniform_row_std
-                if line_is_sparse_text or line_is_uniform_band:
-                    cut_from_bottom += 1
+            # Gradiente vertical
+            grad = np.abs(np.diff(nonwhite,n=1,prepend=0))
+
+            max_cut = int(h*max_subtitle_fraction)
+            cut=0
+            for i in range(h-1,max(h-1-max_cut,-1),-1):
+                if (nonwhite[i]<text_row_density or std_rows[i]<uniform_row_std) and grad[i]>0.02:
+                    cut+=1
                 else:
                     break
 
-            if cut_from_bottom > 0:
-                logger.info(f"Corte de subtítulo detectado: {cut_from_bottom} linhas removidas (~{100*cut_from_bottom/h:.1f}% da altura).")
-                im = im.crop((0, 0, w, h - cut_from_bottom))
-                rgb = _to_numpy_rgb(im)  # atualiza matriz após crop
-                h, w, _ = rgb.shape
-                nonwhite_ratio, _ = _compute_nonwhite_and_std(rgb, bg_tolerance)
+            if cut>15: # só corta se for significativo
+                im=im.crop((0,0,w,h-cut))
+                arr=np.asarray(im)
+                h,w,_=arr.shape
+                mask = np.abs(255-arr).sum(axis=2)>(3*bg_tolerance)
 
-            # 3) Remoção de bordas (bbox de conteúdo != fundo)
-            arr = rgb.astype(np.int16)
-            l1 = np.abs(255 - arr).sum(axis=2)
-            mask_nonwhite = l1 > (3 * bg_tolerance)
+            # Bounding box lateral
+            ys,xs=np.where(mask)
+            if len(xs)>0:
+                left=max(0,xs.min()-padding)
+                right=min(w,xs.max()+1+padding)
+                upper=max(0,ys.min()-padding)
+                lower=min(h,ys.max()+1+padding)
+                im=im.crop((left,upper,right,lower))
 
-            bbox = _bbox_from_mask(mask_nonwhite, padding=padding, width=w, height=h)
-            if bbox:
-                im = im.crop(bbox)
-            else:
-                logger.debug("BBox não encontrada, mantendo imagem como está.")
-
-            # 4) Padroniza para quadrado
-            im_square = _paste_on_square(im, size=final_square_size, bg=(255, 255, 255))
-            im_square.save(image_path, "JPEG", quality=95, optimize=True)
-
+            # Canvas quadrado
+            im.thumbnail((final_square_size,final_square_size),Image.Resampling.LANCZOS)
+            canvas=Image.new('RGB',(final_square_size,final_square_size),(255,255,255))
+            offx=(final_square_size-im.width)//2
+            offy=(final_square_size-im.height)//2
+            canvas.paste(im,(offx,offy))
+            canvas.save(image_path,"JPEG",quality=80,optimize=True)
         return True
-
     except Exception as e:
-        logger.error(f"Erro ao cortar a imagem '{image_path}': {e}")
+        logger.error(f"Erro ao cortar {image_path}: {e}")
         return False

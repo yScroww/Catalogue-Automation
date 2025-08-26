@@ -1,7 +1,0 @@
-2025-08-20 09:31:49 [INFO    ] src.utils.excel: Logger configurado. Arquivo de log: logs/catalog_20250820_093149.log
-2025-08-20 09:31:50 [INFO    ] src.utils.excel: Carregando planilha: data/produtos.xlsx
-2025-08-20 09:31:50 [INFO    ] src.utils.excel: Coluna 'Imagem' não encontrada na planilha de produtos, usando apenas a base de links de imagem.
-2025-08-20 09:31:50 [INFO    ] src.utils.excel: 575 produtos após remover valores nulos
-2025-08-20 09:31:50 [INFO    ] src.utils.excel: Carregando planilha de imagens: data/base_imagens.xlsx
-2025-08-20 09:31:51 [WARNING ] src.utils.excel: Foram encontradas e removidas 1493 SKUs duplicadas na base de imagens.
-2025-08-20 09:31:51 [INFO    ] src.utils.excel: 1229 links de imagem e fornecedor válidos encontrados
