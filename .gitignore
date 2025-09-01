@@ -1,1 +1,4 @@
 data/
+dist/
+logs/
+run.spec
