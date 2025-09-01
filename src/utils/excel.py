@@ -1,79 +1,82 @@
+import os
 import pandas as pd
-from typing import Tuple, Optional
-from src.utils.logger import get_logger
+from .logger import get_logger
+from typing import Tuple, List, Optional
 
 logger = get_logger(__name__)
 
-def pick_column(colmap: dict, *opts: str) -> Optional[str]:
-    """Tenta encontrar uma coluna entre várias opções possíveis."""
-    for o in opts:
-        if o.lower() in colmap:
-            return colmap[o.lower()]
-    return None
+def find_columns(df: pd.DataFrame, names: List[str]) -> Tuple[str, ...]:
+    """Tenta encontrar as colunas no DataFrame, lidando com maiúsculas/minúsculas e espaços."""
+    cols = []
+    df_cols = [c.strip().lower() for c in df.columns]
+    for name in names:
+        try:
+            # Encontra a coluna com base no nome
+            col_name = df.columns[df_cols.index(name.lower())]
+            cols.append(col_name)
+        except ValueError:
+            raise ValueError(f"A coluna obrigatória '{name}' não foi encontrada na planilha.")
+    return tuple(cols) 
 
-def load_product_data(path: str) -> Tuple[pd.DataFrame, str, str, str, Optional[str]]:
-    """Carrega e valida dados de produtos de uma planilha Excel."""
+def load_product_data(file_path: str) -> Tuple[pd.DataFrame, str, str, str, Optional[str]]:
+    """
+    Carrega os dados da planilha de produtos e retorna o DataFrame e os nomes das colunas.
+    """
+    logger.info(f"Carregando planilha: {file_path}")
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"Arquivo não encontrado: {file_path}")
+
+    # Tenta carregar a planilha 'Catálogo de Produtos' primeiro
     try:
-        df = pd.read_excel(path)
-        logger.info(f"Planilha carregada: {path} com {len(df)} registros")
-        
-        colmap = {c.lower(): c for c in df.columns}
-        
-        # Tenta encontrar colunas importantes
-        c_sku = pick_column(colmap, "sku", "codigo", "Código SKU", "ID")
-        c_nome = pick_column(colmap, "nome", "Produto", "Nome do Produto", "Descrição")
-        c_cat = pick_column(colmap, "categoria", "Categoria Primária", "Departamento", "Grupo")
-        c_img = pick_column(colmap, "ImagemArquivo", "Imagem", "ImagemPath", "ImagemFile", "LinkImagem", "ImageURL")
-        c_ativo = pick_column(colmap, "Ativo", "Status", "Disponível", "Ativo?")
+        df = pd.read_excel(file_path, sheet_name='Catálogo de Produtos')
+    except ValueError:
+        # Se a planilha não for encontrada, carrega a primeira planilha
+        df = pd.read_excel(file_path)
 
-        # Valida colunas obrigatórias
-        if not all([c_sku, c_nome, c_cat]):
-            raise ValueError("A planilha precisa ter colunas para SKU, Nome e Categoria")
-        
-        # Filtra por status ativo se a coluna existir
-        if c_ativo:
-            active_values = ["true", "1", "sim", "ativo", "yes", "y", "verdadeiro"]
-            df = df[
-                (df[c_ativo].astype(str).str.lower().isin(active_values)) |
-                (df[c_ativo] == True)
-            ]
-            logger.info(f"Filtrado para {len(df)} produtos ativos")
-        
-        # Remove registros com valores nulos nas colunas críticas
-        df = df.dropna(subset=[c_sku, c_nome, c_cat])
-        logger.info(f"{len(df)} produtos após remover valores nulos")
-        
-        return df, c_sku, c_nome, c_cat, c_img
-    except Exception as e:
-        logger.error(f"Erro ao carregar dados de produtos: {str(e)}")
-        raise
-
-def load_image_links(path: str) -> pd.DataFrame:
-    """Carrega links de imagens de uma planilha Excel."""
+    # Verifica e trata as colunas obrigatórias
     try:
-        df = pd.read_excel(path)
-        logger.info(f"Planilha de imagens carregada: {path} com {len(df)} registros")
-        
-        colmap = {c.lower(): c for c in df.columns}
-        c_sku = pick_column(colmap, "sku", "código", "id produto", "product id")
-        c_url = None
-        
-        # Procura por coluna que parece ser URL
-        for c in colmap:
-            if "http" in c or "url" in c or "link" in c or "imagem" in c:
-                c_url = colmap[c]
-                break
-        
-        if not c_sku or not c_url:
-            raise ValueError("A planilha de imagens precisa ter colunas para SKU e URL")
-        
-        # Filtra e renomeia colunas
-        df = df.dropna(subset=[c_sku, c_url])
-        df = df[[c_sku, c_url]].rename(columns={c_sku: "SKU", c_url: "ImageURL"})
-        
-        logger.info(f"{len(df)} links de imagem válidos encontrados")
-        return df
+        c_sku, c_nome, c_cat = find_columns(df, ['SKU', 'Nome do Produto', 'Grupo'])
+    except ValueError as e:
+        raise ValueError(f"Planilha de produtos inválida: {e}")
+
+    # A coluna de imagem é opcional na planilha de produtos
+    c_img = None
+    try:
+        c_img = find_columns(df, ['Imagem'])[0]
+    except ValueError:
+        logger.info("Coluna 'Imagem' não encontrada na planilha de produtos, usando apenas a base de links de imagem.")
+
+    # Remove linhas onde as colunas essenciais estão nulas
+    df = df.dropna(subset=[c_sku, c_nome, c_cat])
+    logger.info(f"{len(df)} produtos após remover valores nulos")
+
+    return df, c_sku, c_nome, c_cat, c_img
+
+
+def load_image_links(file_path: str) -> pd.DataFrame:
+    """
+    Carrega a planilha de links de imagens.
+    """
+    logger.info(f"Carregando planilha de imagens: {file_path}")
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"Arquivo não encontrado: {file_path}")
+
+    df = pd.read_excel(file_path)
+
+    try:
+        c_sku, c_image_url = find_columns(df, ['SKU', 'Imagem Principal'])
+        df = df[[c_sku, c_image_url]].copy()
+        df.rename(columns={c_sku: 'SKU', c_image_url: 'ImageURL'}, inplace=True)
+    except ValueError as e:
+        raise ValueError(f"Planilha de imagens deve conter as colunas 'SKU' e 'Imagem Principal'. Erro: {e}")
+
+    # Drop duplicates based on SKU
+    dupes = df['SKU'].duplicated(keep='first').sum()
+    if dupes > 0:
+        logger.warning(f"Foram encontradas e removidas {dupes} SKUs duplicadas na base de imagens.")
+    df.drop_duplicates(subset=['SKU'], keep='first', inplace=True)
     
-    except Exception as e:
-        logger.error(f"Erro ao carregar links de imagem: {str(e)}")
-        raise
+    # Filter out rows with no image link
+    df = df.dropna(subset=['ImageURL'])
+    logger.info(f"{len(df)} links de imagem e fornecedor válidos encontrados")
+    return df
