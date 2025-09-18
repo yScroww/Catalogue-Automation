@@ -2,18 +2,22 @@
 import os
 from src.main import main
 from src.utils.logger import get_logger
+import dotenv
+
+dotenv.load_dotenv(override=True)
 
 logger = get_logger(__name__)
 
-BASE_DIR = r"Z:\04-Habilidades para vencer\05-Catálago\Gerador de Catálogo\data"
+BASE_DIR = os.getenv("BASE_DIR", "")
+OUTPUT_DIR = os.getenv("OUTPUT_DIR", "")
 
-EXCEL_PATH = os.path.join(BASE_DIR, "produtos.xlsx")
-IMG_EXCEL_PATH = os.path.join(BASE_DIR, "base_imagens.xlsx")
-IMAGENS_PATH = os.path.join(BASE_DIR, "imagens")
-CAPAS_PATH = os.path.join(BASE_DIR, "capas_forças")
+EXCEL_PATH = os.getenv("EXCEL_PATH", os.path.join(BASE_DIR, "produtos.xlsx"))
+IMG_EXCEL_PATH = os.getenv("IMG_EXCEL_PATH", os.path.join(BASE_DIR, "base_imagens.xlsx"))
+IMAGENS_PATH = os.getenv("IMAGENS_PATH", os.path.join(BASE_DIR, "imagens"))
+CAPAS_PATH = os.getenv("CAPAS_PATH", os.path.join(BASE_DIR, "capas_forças"))
 
-OUTPUT_FILE = "Catalogo_Nordesa.pdf"
-OUTPUT_DIR = r"Z:\04-Habilidades para vencer\05-Catálago"
+OUTPUT_FILE = os.getenv("OUTPUT_FILE", "Catalogo Nordesa.pdf")
+
 
 if __name__ == "__main__":
     try:
