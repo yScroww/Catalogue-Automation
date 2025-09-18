@@ -1,23 +1,34 @@
+# run.py
 import os
-import sys
 from src.main import main
+from src.utils.logger import get_logger
 
-# Define os caminhos de rede para as planilhas e a pasta de imagens
-NETWORK_PATH = r"\\192.168.0.7\Depto Comercial\04-Habilidades para vencer\05-Catálago\Gerador de Catálogo"
-EXCEL_PATH = os.path.join(NETWORK_PATH, "data", "produtos.xlsx")
-IMG_EXCEL_PATH = os.path.join(NETWORK_PATH, "data", "base_imagens.xlsx")
-IMAGENS_PATH = os.path.join(NETWORK_PATH, "data", "imagens")
-CAPAS_PATH = os.path.join(NETWORK_PATH, "data", "capas_forças")
+logger = get_logger(__name__)
 
-if __name__ == '__main__':
+BASE_DIR = r"Z:\04-Habilidades para vencer\05-Catálago\Gerador de Catálogo\data"
+
+EXCEL_PATH = os.path.join(BASE_DIR, "produtos.xlsx")
+IMG_EXCEL_PATH = os.path.join(BASE_DIR, "base_imagens.xlsx")
+IMAGENS_PATH = os.path.join(BASE_DIR, "imagens")
+CAPAS_PATH = os.path.join(BASE_DIR, "capas_forças")
+
+OUTPUT_FILE = "Catalogo_Nordesa.pdf"
+OUTPUT_DIR = r"Z:\04-Habilidades para vencer\05-Catálago"
+
+if __name__ == "__main__":
     try:
-        # Chama a função principal do seu código, passando os caminhos de rede
-        # como argumentos, incluindo a pasta de imagens e capas.
-        main(EXCEL_PATH, IMG_EXCEL_PATH, IMAGENS_PATH, CAPAS_PATH)
+        os.makedirs(OUTPUT_DIR, exist_ok=True)
+        final_output_path = os.path.join(OUTPUT_DIR, OUTPUT_FILE)
 
-    except FileNotFoundError as e:
-        print(f"Erro: Arquivo não encontrado. Verifique se o caminho de rede está correto e se o arquivo existe: {e}")
-        input("Pressione Enter para fechar...")
+        logger.info("🚀 Iniciando a geração do catálogo...")
+        main(
+            excel_path=EXCEL_PATH,
+            img_excel_path=IMG_EXCEL_PATH,
+            imagens_path=IMAGENS_PATH,
+            capas_path=CAPAS_PATH,
+            output_file=final_output_path,
+        )
+        logger.info(f"🎉 Concluído! Catálogo salvo em: {final_output_path}")
+
     except Exception as e:
-        print(f"Ocorreu um erro inesperado: {e}")
-        input("Pressione Enter para fechar...")
+        logger.error(f"❌ Erro inesperado: {e}", exc_info=True)
