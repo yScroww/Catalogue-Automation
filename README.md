@@ -1,79 +1,109 @@
-# Gerador de Catálogo em PDF
+# 📘 Catalogue Automation
 
-Este projeto é uma ferramenta de automação em Python para gerar catálogos de produtos no formato PDF. Ele utiliza dados de planilhas Excel e arquivos de imagem para criar documentos estruturados e prontos para uso. O objetivo é simplificar e agilizar o processo de criação de catálogos para a equipe comercial.
+This project automates the creation of a **product catalogue in PDF format** from Excel spreadsheets containing product data and image links.  
+It downloads, optimizes, and crops product images, generates a well-structured catalogue with covers, and produces CSV reports summarizing which products were included or excluded.
 
-## Como Funciona a Arquitetura
+---
 
-O projeto foi construído com uma arquitetura modular, dividida em funções específicas para cada tarefa, o que facilita a manutenção e a expansão. O fluxo de trabalho principal é o seguinte:
+## 🚀 Features
 
-- **Orquestração de Processos**: O script `main.py` atua como o controlador principal. Ele coordena as etapas, desde o carregamento dos dados até a geração final do PDF.
-  
-- **Gerenciamento de Dados**: O módulo `src/utils/excel.py` é responsável por ler os dados de produtos e os links de imagens a partir dos arquivos Excel. O script aplica filtros para incluir apenas produtos relevantes, como aqueles com estoque positivo e que não são promocionais.
-  
-- **Processamento de Imagens**: O módulo `src/utils/images.py` cuida de todas as operações com as imagens. Ele verifica se as imagens já existem localmente e, se não, as baixa, otimiza e corta automaticamente para que se ajustem ao layout do catálogo.
-  
-- **Criação do PDF**: A lógica de layout do documento está concentrada no `src/pdf_builder.py`. Este módulo adiciona as capas personalizadas por "Força" (ex: Food, Bebidas) e organiza os produtos em uma grade, categorizando-os por "Grupo" e "Família".
-  
-- **Ponto de Entrada**: O arquivo `run.py` é o ponto de partida do projeto. Ele define os caminhos de rede para os arquivos de entrada e saída, garantindo que o programa funcione corretamente em um ambiente compartilhado.
+- Load product data from Excel spreadsheets.
+- Download and optimize product images (resizing, cropping borders, removing subtitles).
+- Cache and reuse previously optimized images.
+- Build a professional PDF catalogue grouped by categories and families.
+- Generate CSV reports:
+  - **Full report**: all SKUs with a flag indicating whether they were included in the catalogue.
+  - **Missing report** (optional): products without valid images.
+- Logging system for debugging and auditing.
 
-## Estrutura do Projeto
+---
 
-A organização dos arquivos e pastas é a seguinte:
+## 📂 Project Structure
 
-.
-├── src/
-│ ├── utils/
-│ │ ├── excel.py # Funções para carregar dados das planilhas.
-│ │ ├── images.py # Funções para download e otimização de imagens.
-│ │ └── logger.py # Configuração de logging.
-│ ├── main.py # Orquestra as etapas de processamento.
-│ └── pdf_builder.py # Constrói o layout do documento PDF.
-├── data/
-│ ├── base_imagens.xlsx # Planilha com URLs das imagens.
-│ ├── produtos.xlsx # Planilha principal com dados dos produtos.
-│ ├── imagens/ # Diretório para imagens processadas.
-│ └── capas_forças/ # Diretório para as imagens de capa.
-│ ├── capa.png
-│ └── [nome_da_força].png
-└── run.py # Script principal para execução e configuração.
+```
+CATALOGUE-AUTOMATION/
+│
+├── data/                  # Input Excel spreadsheets and other resources
+├── logs/                  # Generated log files
+├── src/                   # Source code
+│   ├── main.py            # Main pipeline entrypoint
+│   ├── run.py             # Script to run the project
+│   ├── pdf_builder.py     # Catalogue PDF generator
+│   │
+│   └── utils/             # Utility modules
+│       ├── excel.py       # Excel loading and preprocessing
+│       ├── images.py      # Image download, optimization, and cropping
+│       ├── logger.py      # Logging configuration
+│       └── __init__.py
+│
+├── requirements.txt       # Python dependencies
+├── run.spec               # PyInstaller spec (for packaging as executable)
+└── README.md              # Project documentation
+```
 
+---
 
-## Dependências
+## ⚙️ Installation
 
-O projeto utiliza as seguintes bibliotecas Python. Elas podem ser instaladas via pip:
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/catalogue-automation.git
+   cd catalogue-automation
+   ```
 
-- `pandas`
-- `reportlab`
-- `Pillow`
-- `requests`
-- `pyinstaller` (para criar o executável)
+2. Create a virtual environment and install dependencies:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # (Linux/Mac)
+   venv\Scripts\activate      # (Windows)
 
-Para instalar todas as dependências de uma vez, execute o seguinte comando:
+   pip install -r requirements.txt
+   ```
 
-- `pip install requirements.txt`
+---
 
+## ▶️ Usage
 
-## Como Usar
+1. Place your **product Excel file** and **image links Excel file** inside the `data/` folder.
 
-### 1. Criando o Executável
+2. Run the pipeline:
+   ```bash
+   python src/run.py
+   ```
 
-Para compilar o projeto em um executável autônomo, navegue até a pasta raiz do projeto (onde o arquivo `run.py` está localizado) e execute o comando do PyInstaller:
+3. The script will:
+   - Process the product list.
+   - Download and optimize images.
+   - Generate the catalogue PDF in the project folder.
+   - Save CSV reports about included and missing products.
 
-- `pyinstaller --onefile run.py`
+---
 
+## 📝 Reports
 
-O arquivo `run.exe` será gerado na pasta `dist/`.
+- `*_relatorio.csv` → All SKUs with a `YES/NO` flag indicating if they were included in the catalogue.
+- `*_sem_imagem.csv` → (Optional) Products excluded because of missing images.
 
-### 2. Executando o Script
+---
 
-Para iniciar a geração do catálogo, execute o arquivo `run.exe`. O programa irá:
+## 🛠 Tech Stack
 
-1. Carregar os dados e as imagens.
-2. Gerar o `Catálogo_Nordesa.pdf` na pasta de saída especificada no `run.py`.
-3. Criar um arquivo `status_catalogo.csv` que detalha quais produtos foram incluídos no catálogo.
+- **Python 3.12+**
+- [Pandas](https://pandas.pydata.org/) – data manipulation  
+- [Pillow (PIL)](https://python-pillow.org/) – image processing  
+- [ReportLab](https://www.reportlab.com/) – PDF generation  
+- [Requests](https://requests.readthedocs.io/) – HTTP image download  
 
-## Solução de Problemas Comuns
+---
 
-### `FileNotFoundError`
+## 📌 Notes
 
-Este erro indica que o programa não conseguiu encontrar um arquivo. Verifique se o caminho de rede configurado na variável `NETWORK_PATH` no arquivo `run.py` está correto e se o usuário tem permissão de acesso à pasta.
+- All images are normalized to square format (default `600x600px`).
+- Logs are stored under `/logs` with timestamps for debugging.
+- You can package this project as an executable using the `run.spec` file with **PyInstaller**.
+
+---
+
+## 📄 License
+
+MIT License – feel free to use and adapt.
